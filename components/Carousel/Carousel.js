@@ -1,8 +1,22 @@
 class Carousel {
-
+    // constructor(element) {
+    //     this.element = element;
 }
 
-let carousel = document.querySelector();
+
+let carousel = document.querySelectorAll('.carousel .left-button .right-button');
+let imgs = this.carousel.getElementById(img)
+
+var currentSlide = 0
+var slideInterval = setInterval(nextSlide, 2000)
+
+function nextSlide() {
+    slides[currentSlide].className = 'slide'
+    currentSlide = (currentSlide + 1) % slides.length
+    slides[currentSlide].className = 'slide showing'
+}
+
+
 
 /* If You've gotten this far, you're on your own! Although we will give you some hints:
     1. You will need to grab a reference to the carousel, and in it grab the left and right buttons
